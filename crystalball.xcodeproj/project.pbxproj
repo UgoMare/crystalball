@@ -21,6 +21,9 @@
 		EC6CFCCD197DF7C800D9B334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6CFCAF197DF7C700D9B334 /* UIKit.framework */; };
 		EC6CFCD5197DF7C800D9B334 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC6CFCD3197DF7C800D9B334 /* InfoPlist.strings */; };
 		EC6CFCD7197DF7C800D9B334 /* crystalballTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CFCD6197DF7C800D9B334 /* crystalballTests.m */; };
+		EC6CFCE219808F4C00D9B334 /* CrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CFCE119808F4C00D9B334 /* CrystalBall.m */; };
+		EC6CFCE619817FD000D9B334 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6CFCE519817FD000D9B334 /* AudioToolbox.framework */; };
+		EC6CFCE8198182F200D9B334 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC6CFCE7198182F200D9B334 /* crystal_ball.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		EC6CFCD2197DF7C800D9B334 /* crystalballTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "crystalballTests-Info.plist"; sourceTree = "<group>"; };
 		EC6CFCD4197DF7C800D9B334 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC6CFCD6197DF7C800D9B334 /* crystalballTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = crystalballTests.m; sourceTree = "<group>"; };
+		EC6CFCE019808F4C00D9B334 /* CrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrystalBall.h; sourceTree = "<group>"; };
+		EC6CFCE119808F4C00D9B334 /* CrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrystalBall.m; sourceTree = "<group>"; };
+		EC6CFCE519817FD000D9B334 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EC6CFCE7198182F200D9B334 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crystal_ball.mp3; path = ../../../../Downloads/crystal_ball.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6CFCE619817FD000D9B334 /* AudioToolbox.framework in Frameworks */,
 				EC6CFCAE197DF7C700D9B334 /* CoreGraphics.framework in Frameworks */,
 				EC6CFCB0197DF7C700D9B334 /* UIKit.framework in Frameworks */,
 				EC6CFCAC197DF7C700D9B334 /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		EC6CFCAA197DF7C700D9B334 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC6CFCE519817FD000D9B334 /* AudioToolbox.framework */,
 				EC6CFCAB197DF7C700D9B334 /* Foundation.framework */,
 				EC6CFCAD197DF7C700D9B334 /* CoreGraphics.framework */,
 				EC6CFCAF197DF7C700D9B334 /* UIKit.framework */,
@@ -112,13 +121,14 @@
 		EC6CFCB1197DF7C700D9B334 /* crystalball */ = {
 			isa = PBXGroup;
 			children = (
-				EC6CFCBA197DF7C700D9B334 /* AppDelegate.h */,
-				EC6CFCBB197DF7C700D9B334 /* AppDelegate.m */,
+				EC6CFCE7198182F200D9B334 /* crystal_ball.mp3 */,
 				EC6CFCBD197DF7C700D9B334 /* Main.storyboard */,
 				EC6CFCC0197DF7C700D9B334 /* ViewController.h */,
 				EC6CFCC1197DF7C800D9B334 /* ViewController.m */,
 				EC6CFCC3197DF7C800D9B334 /* Images.xcassets */,
 				EC6CFCB2197DF7C700D9B334 /* Supporting Files */,
+				EC6CFCE019808F4C00D9B334 /* CrystalBall.h */,
+				EC6CFCE119808F4C00D9B334 /* CrystalBall.m */,
 			);
 			path = crystalball;
 			sourceTree = "<group>";
@@ -126,6 +136,8 @@
 		EC6CFCB2197DF7C700D9B334 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC6CFCBA197DF7C700D9B334 /* AppDelegate.h */,
+				EC6CFCBB197DF7C700D9B334 /* AppDelegate.m */,
 				EC6CFCB3197DF7C700D9B334 /* crystalball-Info.plist */,
 				EC6CFCB4197DF7C700D9B334 /* InfoPlist.strings */,
 				EC6CFCB7197DF7C700D9B334 /* main.m */,
@@ -230,6 +242,7 @@
 			files = (
 				EC6CFCC4197DF7C800D9B334 /* Images.xcassets in Resources */,
 				EC6CFCB6197DF7C700D9B334 /* InfoPlist.strings in Resources */,
+				EC6CFCE8198182F200D9B334 /* crystal_ball.mp3 in Resources */,
 				EC6CFCBF197DF7C700D9B334 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6CFCC2197DF7C800D9B334 /* ViewController.m in Sources */,
+				EC6CFCE219808F4C00D9B334 /* CrystalBall.m in Sources */,
 				EC6CFCBC197DF7C700D9B334 /* AppDelegate.m in Sources */,
 				EC6CFCB8197DF7C700D9B334 /* main.m in Sources */,
 			);
